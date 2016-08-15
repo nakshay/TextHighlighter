@@ -57,7 +57,7 @@ Set the default color if no color is specified
 ##Screenshot
 
 
-![alt tag](https://raw.githubusercontent.com/username/projectname/branch/path/to/scrennshot.jpg)
+![alt tag](https://raw.githubusercontent.com/akshay-naik/TextHighlighter/master/scrennshot.jpg)
 
 
 
