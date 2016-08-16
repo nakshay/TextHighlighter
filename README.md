@@ -42,7 +42,7 @@ Pass the returned string to ```Html.fromHtml()``` to get highlighted text
 
 ``` textViewobj.setText(Html.fromHtml(highlightedText)); ```
 
-you can add your own tags by appending tags inside ```setText()``` 
+you can add your own tags by appending tags inside ```Html.fromHtml()``` 
 
 ##More you can get.
 
