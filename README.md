@@ -14,7 +14,7 @@ Add below line in app ```build.gradle```
  
 ```gradle
 dependencies {
-	compile 'com.akshay.texthighlighter:texthighlighterapi:1.0.0'
+	compile 'com.github.akshay-naik:texthighlighterapi:1.1.0'
 }
 ```
 
