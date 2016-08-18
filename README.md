@@ -56,7 +56,13 @@ Set the default color if no color is specified
 
 ##Note:
 
-Named colors will may not work always, you can use Hex values insted of named colors, i.e. text can be highlighted in yellow using #DBFF48 Hex value. Below is the link for HTML color chooser.
+Named colors may not work always, you can use Hex values insted of named colors, hence using Hex values instead of named colors is recommended.
+
+
+Example:-
+
+```highlighter.setColorForTheToken("Awesome","#D83400"); ```
+
 
 [www.htmlcolorcodes](http://htmlcolorcodes.com/)
 
