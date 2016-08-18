@@ -54,6 +54,12 @@ Set the default color if no color is specified
 
 ``` highlighter.defaultColor="colorname" ```
 
+##Note:
+
+Named colors will may not work always, you can use Hex values insted of named colors, i.e. text can be highlighted in yellow using #DBFF48 Hex value. Below is the link for HTML color chooser.
+
+[www.htmlcolorcodes](http://htmlcolorcodes.com/)
+
 ##Screenshot
 
 
