@@ -77,7 +77,7 @@ Pass the returned string to ```Html.fromHtml()``` to get highlighted text
 
 you can add extra tags by appending tags inside ```Html.fromHtml()``` 
 
-##More methods
+**More methods**
 
 ```
 String = getColorForTheToken(String token);
