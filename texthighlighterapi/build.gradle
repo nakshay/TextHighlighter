@@ -13,7 +13,7 @@ ext {
     siteUrl = 'https://github.com/akshay-naik/TextHighlighter'
     gitUrl = 'https://github.com/akshay-naik/TextHighlighter.git'
 
-    libraryVersion = '1.1.0'
+    libraryVersion = '1.1.3'
 
     developerId = 'akshay-naik'
     developerName = 'Akshay Naik'
