@@ -25,8 +25,6 @@ import java.util.StringTokenizer;
 
 public class TextHighlighter {
 
-
-
     public String defaultColor="black";
     private HashMap<String,String> colorMap= new HashMap<>();
     private HashMap<String,String> styleMap=new HashMap<>();
@@ -35,7 +33,6 @@ public class TextHighlighter {
     public static final String NORMAL="NORMAL";
     public static final String BOLD="BOLD";
     public static final String ITALIC="ITALIC";
-    public static final String STRIKE="STRIKE";
     public static final String UNDERLINE="UNDERLINE";
     public static final String SUPERSCRIPT="SUPERSCRIPT";
     public static final String SUBSCRIPT="SUBSCRIPT";
@@ -74,7 +71,7 @@ public class TextHighlighter {
 
     private String colorTheToken(String token, String color) {
 
-        return "<font color='"+color+"'>"+token+"</font>";
+        return "<font color='"+color+"'> "+token+" </font>";
     }
 
     public void setColorForTheToken(String token, String color) {
@@ -90,7 +87,7 @@ public class TextHighlighter {
             setColorForTheToken(token,color);
         }
     }
-    
+
     public String[] getColorForTheToken(String[] tokenArray) {
 
         String[] color=new String[tokenArray.length];
@@ -164,27 +161,23 @@ public class TextHighlighter {
                 break;
 
             case BOLD:
-                taggedText= "<b>"+token+"</b>";
+                taggedText= "<b> "+token+" </b>";
                 break;
 
             case ITALIC:
-                taggedText= "<i>"+token+"</i>";
-                break;
-
-            case STRIKE:
-                taggedText= "<strike>"+token+"</strike>";
+                taggedText= "<i> "+token+" </i>";
                 break;
 
             case UNDERLINE:
-                taggedText= "<u>"+token+"</u>";
+                taggedText= "<u> "+token+" </u>";
                 break;
 
             case SUPERSCRIPT:
-                taggedText= "<sup>"+token+"</sup>";
+                taggedText= "<sup> "+token+" </sup>";
                 break;
 
             case SUBSCRIPT:
-                taggedText= "<sub>"+token+"</sub>";
+                taggedText= "<sub> "+token+" </sub>";
                 break;
 
             default:
