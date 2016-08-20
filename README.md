@@ -97,13 +97,13 @@ Example:-
 
 ```highlighter.setColorForTheToken("Awesome","#D83400"); ```
 
-##Supported tags for text style
+##Supported tags for text styling
 
- - <b>
- - <i>
- - <u>
- - <sup>
- - <sub>
+ <b>
+ <i>
+ <u>
+ <sup>
+ <sub>
 
 
 Visit [www.htmlcolorcodes](http://htmlcolorcodes.com/) for awesome colors and their Hex values. 
