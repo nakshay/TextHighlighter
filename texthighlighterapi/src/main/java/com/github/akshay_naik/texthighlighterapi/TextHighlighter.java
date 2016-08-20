@@ -39,7 +39,7 @@ public class TextHighlighter {
 
 
     public String getHighlightedText(String stringToBeHighlighted) {
-        String highlightedText="";
+        StringBuilder highlightedText=new StringBuilder();
         String color="";
         String myToken="";
 
@@ -49,10 +49,10 @@ public class TextHighlighter {
 
             myToken = tokenizer.nextToken();
             color=getColor(myToken);
-            highlightedText += colorTheToken(myToken, color) + " ";
+            highlightedText.append(colorTheToken(myToken, color) + " ");
         }
 
-        return highlightedText;
+        return new String(highlightedText);
     }
 
     private String getColor(String myToken) {
