@@ -23,8 +23,15 @@ public class MainActivity extends AppCompatActivity {
         highlighter.setColorForTheToken("text","purple");
         highlighter.setColorForTheToken("highlighter","blue");
 
+        highlighter.setStyleForTheToken("Awesome",TextHighlighter.BOLD);
+        highlighter.setStyleForTheToken("Text",TextHighlighter.UNDERLINE);
+        highlighter.setStyleForTheToken("Highlighter",TextHighlighter.ITALIC);
+
         mTextView= (TextView) findViewById(R.id.mytextview);
 
-        mTextView.setText(Html.fromHtml(highlighter.getHighlightedText("Awesome text highlighter")));
+        String highlightedText=highlighter.getHighlightedText("Awesome text highlighter");
+        String styledText=highlighter.getStyledText(highlightedText);
+
+        mTextView.setText(Html.fromHtml(styledText));
     }
 }
