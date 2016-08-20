@@ -32,6 +32,7 @@ highlighter.setColorForTheToken("Highlighter","blue");
 
 ```
 OR
+
 set color for multiple words
 ```
 highlighter.setColorForTheToken(String[],"color");
@@ -54,13 +55,14 @@ highlighter.setStyleForTheToken("Awesome",TextHighlighter.ITALIC);
 ```
 
 OR
+
 set style for multiple words
 
 ```
 highligter.setStyleForTheToken(String[],style);
 ```
 
-Call the method ```getStyledText(String textToBeStyled)``` and pass the text to be styled
+Call the method ```getStyledText(String textToBeStyled)``` and pass the text to be styled.
 
 ```
 String highlightedText=highlighter.getHighlightedText("Awesome Text Highlighter");
@@ -73,7 +75,7 @@ Pass the returned string to ```Html.fromHtml()``` to get highlighted text
 
 ``` textViewobj.setText(Html.fromHtml(highlightedText)); ```
 
-you can add your own tags by appending tags inside ```Html.fromHtml()``` 
+you can add extra tags by appending tags inside ```Html.fromHtml()``` 
 
 ##More methods
 
@@ -97,11 +99,11 @@ Example:-
 
 ##Supported tags for text style
 
-- <b>
-- <i>
-- <u>
-- <sup>
-- <sub>
+- <b> -
+- <i> -
+- <u> -
+- <sup> -
+- <sub> -
 
 
 Visit [www.htmlcolorcodes](http://htmlcolorcodes.com/) for awesome colors and their Hex values. 
