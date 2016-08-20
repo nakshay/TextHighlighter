@@ -10,7 +10,6 @@ The API can be used with all andriod views which allows the rendering of text us
 ##Usage
 
 Add below line in app ```build.gradle```
-
  
 ```gradle
 dependencies {
