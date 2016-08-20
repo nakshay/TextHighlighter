@@ -29,13 +29,19 @@ public class TextHighlighter {
 
     public String defaultColor="black";
     private HashMap<String,String> colorMap= new HashMap<>();
+    private HashMap<String,String> styleMap=new HashMap<>();
 
-    public TextHighlighter() {}
+    //pre-defined Styles
+    public static final String NORMAL="NORMAL";
+    public static final String BOLD="BOLD";
+    public static final String ITALIC="ITALIC";
+    public static final String STRIKE="STRIKE";
+    public static final String UNDERLINE="UNDERLINE";
+    public static final String SUPERSCRIPT="SUPERSCRIPT";
+    public static final String SUBSCRIPT="SUBSCRIPT";
 
 
-
-    public String getHighlightedText(String stringToBeHighlighted)
-    {
+    public String getHighlightedText(String stringToBeHighlighted) {
         String highlightedText="";
         String color="";
         String myToken="";
@@ -78,8 +84,26 @@ public class TextHighlighter {
         colorMap.put(token.toLowerCase(),color);
     }
 
-    public String getColorForTheToken(String token)
-    {
+    public void setColorForTheToken(String[] tokenArray,String color) {
+
+        for (String token:tokenArray) {
+            setColorForTheToken(token,color);
+        }
+    }
+    
+    public String[] getColorForTheToken(String[] tokenArray) {
+
+        String[] color=new String[tokenArray.length];
+
+        for(int index=0;index<tokenArray.length;index++) {
+            color[index]=getColorForTheToken(tokenArray[index]);
+        }
+
+        return color;
+
+    }
+
+    public String getColorForTheToken(String token) {
         token=token.trim();
         String color="";
 
@@ -90,6 +114,111 @@ public class TextHighlighter {
         }
         return color;
 
+    }
+
+
+
+    public String getStyledText(String stringToBeStyled)  {
+        StringBuilder styledText=new StringBuilder();
+        String style="";
+        String myToken="";
+        StringTokenizer tokenizer=new StringTokenizer(stringToBeStyled);
+
+        while (tokenizer.hasMoreTokens()) {
+
+            myToken=tokenizer.nextToken();
+            style=getStyle(myToken);
+            styledText.append(styleTheToken(myToken,style)+ " ");
+        }
+        return new String(styledText);
+    }
+
+    public String[] getStyleForTheToken(String[] tokenArray) {
+
+        String[] style=new String[tokenArray.length];
+        for(int index=0;index<tokenArray.length;index++) {
+            style[index]=getStyleForTheToken(tokenArray[index]);
+        }
+
+        return style;
+    }
+
+    private String getStyle(String myToken) {
+
+        String style=styleMap.get(myToken.toLowerCase());
+
+        if(style==null) {
+            style=NORMAL;
+        }
+
+        return style;
+    }
+
+    private String styleTheToken(String token,String style) {
+
+        String taggedText=token;
+
+        switch (style) {
+            case NORMAL :
+                taggedText= token;
+                break;
+
+            case BOLD:
+                taggedText= "<b>"+token+"</b>";
+                break;
+
+            case ITALIC:
+                taggedText= "<i>"+token+"</i>";
+                break;
+
+            case STRIKE:
+                taggedText= "<strike>"+token+"</strike>";
+                break;
+
+            case UNDERLINE:
+                taggedText= "<u>"+token+"</u>";
+                break;
+
+            case SUPERSCRIPT:
+                taggedText= "<sup>"+token+"</sup>";
+                break;
+
+            case SUBSCRIPT:
+                taggedText= "<sub>"+token+"</sub>";
+                break;
+
+            default:
+                taggedText=token;
+
+        }
+        return taggedText;
+    }
+
+    public void setStyleForTheToken(String token,String style) {
+
+        token=token.trim();
+        style=style.trim();
+        styleMap.put(token.toLowerCase(),style);
+
+    }
+
+    public void setStyleForTheToken(String[] tokenArray,String style) {
+
+        for(String token:tokenArray) {
+            setStyleForTheToken(token,style);
+        }
+    }
+
+    public String getStyleForTheToken(String token) {
+        token=token.trim();
+        String style="";
+
+        style=styleMap.get(token.toLowerCase());
+
+        if (style==null) {
+            return NORMAL;
+        }
+        return style;
     }
 
 }
