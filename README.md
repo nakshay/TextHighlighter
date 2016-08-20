@@ -69,7 +69,7 @@ Visit [www.htmlcolorcodes](http://htmlcolorcodes.com/) for awesome colors and th
 ##Screenshot
 
 
-![alt tag](https://raw.githubusercontent.com/akshay-naik/TextHighlighter/master/scrennshot.jpg)
+![alt tag](https://raw.githubusercontent.com/akshay-naik/TextHighlighter/master/screenshot.png)
 
 
 
