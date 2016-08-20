@@ -1,6 +1,6 @@
 # TextHighlighter [ ![Download](https://api.bintray.com/packages/akshaynaik/maven/texthighlighterapi/images/download.svg) ](https://bintray.com/akshaynaik/maven/texthighlighterapi/_latestVersion)
 
-TextHighlighter is simple android API for developers to show highlighted text in android apps.
+TextHighlighter is simple android API for developers to show highlighted text in android apps, also provides methods to show styled text.
 
 ##Description:
 
@@ -29,13 +29,37 @@ Set the color for specific word
 highlighter.setColorForTheToken("Awesome","red");
 highlighter.setColorForTheToken("Text","purple");
 highlighter.setColorForTheToken("Highlighter","blue");
+
+```
+OR
+```
+highlighter.setColorForTheToken(String[],"color");
 ```
 
+
 Call the method ```getHighlightedText(String textToBeHighlighted)``` and pass the text to be highlighted
+
+set styles for specific word
+
+```
+highlighter.setStyleForTheToken("Awesome",TextHighlighter.BOLD);
+highlighter.setStyleForTheToken("Text",TextHighlighter.UNDERLINE);
+highlighter.setStyleForTheToken("Awesome",TextHighlighter.ITALIC);
+```
+OR
+
+```
+highligter.setStyleForTheToken(String[],style)
+```
+
+Call the method ```getStyledText(String textToBeStyled)``` and pass the text to be highlighted
 
 ```
 String highlightedText=highlighter.getHighlightedText("Awesome Text Highlighter");
 ```
+
+both highlited and styled text can be used by passing highlited text to styled text and vice versa.
+
 
 Pass the returned string to ```Html.fromHtml()``` to get highlighted text
 
@@ -61,6 +85,14 @@ Named colors may not work always, you can use Hex values insted of named colors,
 Example:-
 
 ```highlighter.setColorForTheToken("Awesome","#D83400"); ```
+
+##Supported tags for text style
+
+*<b>
+*<i>
+*<u>
+*<sup>
+*<sub>
 
 
 Visit [www.htmlcolorcodes](http://htmlcolorcodes.com/) for awesome colors and their Hex values. 
