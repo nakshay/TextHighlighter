@@ -32,10 +32,15 @@ highlighter.setColorForTheToken("Highlighter","blue");
 
 ```
 OR
+set color for multiple words
 ```
 highlighter.setColorForTheToken(String[],"color");
 ```
+To set default color, if no color is specified.
 
+```
+highlighter.defaultColor="black" 
+```
 
 Call the method ```getHighlightedText(String textToBeHighlighted)``` and pass the text to be highlighted
 
@@ -45,14 +50,17 @@ set styles for specific word
 highlighter.setStyleForTheToken("Awesome",TextHighlighter.BOLD);
 highlighter.setStyleForTheToken("Text",TextHighlighter.UNDERLINE);
 highlighter.setStyleForTheToken("Awesome",TextHighlighter.ITALIC);
+
 ```
+
 OR
+set style for multiple words
 
 ```
-highligter.setStyleForTheToken(String[],style)
+highligter.setStyleForTheToken(String[],style);
 ```
 
-Call the method ```getStyledText(String textToBeStyled)``` and pass the text to be highlighted
+Call the method ```getStyledText(String textToBeStyled)``` and pass the text to be styled
 
 ```
 String highlightedText=highlighter.getHighlightedText("Awesome Text Highlighter");
@@ -67,15 +75,16 @@ Pass the returned string to ```Html.fromHtml()``` to get highlighted text
 
 you can add your own tags by appending tags inside ```Html.fromHtml()``` 
 
-##More you can get.
+##More methods
 
-Get the color for specific word
+```
+String = getColorForTheToken(String token);
+String = getStyleForTheToken(String token);
 
-```getColorForTheToken(String token)```
+String[] = getColorForTheToken(String[] token);
+String[] = getStyleForTheToken(String[] token);
+```
 
-Set the default color if no color is specified
-
-``` highlighter.defaultColor="colorname" ```
 
 ##Note:
 
@@ -88,11 +97,11 @@ Example:-
 
 ##Supported tags for text style
 
-*<b>
-*<i>
-*<u>
-*<sup>
-*<sub>
+- <b>
+- <i>
+- <u>
+- <sup>
+- <sub>
 
 
 Visit [www.htmlcolorcodes](http://htmlcolorcodes.com/) for awesome colors and their Hex values. 
