@@ -4,18 +4,18 @@ ext {
     bintrayRepo = 'maven'
     bintrayName = 'texthighlighterapi'
 
-    publishedGroupId = 'com.github.akshay-naik'
+    publishedGroupId = 'com.github.akshayrn'
     libraryName = 'texthighlighterapi'
     artifact = 'texthighlighterapi'
 
     libraryDescription = 'TextHighlighter is simple android API for developers to show highlighted text in android apps.'
 
-    siteUrl = 'https://github.com/akshay-naik/TextHighlighter'
-    gitUrl = 'https://github.com/akshay-naik/TextHighlighter.git'
+    siteUrl = 'https://github.com/akshayrn/TextHighlighter'
+    gitUrl = 'https://github.com/akshayrn/TextHighlighter.git'
 
-    libraryVersion = '1.1.3'
+    libraryVersion = '1.1.4'
 
-    developerId = 'akshay-naik'
+    developerId = 'akshayrn'
     developerName = 'Akshay Naik'
     developerEmail = 'akshaynaik93@gmail.com'
 
