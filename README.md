@@ -122,9 +122,7 @@ Visit [www.htmlcolorcodes](http://htmlcolorcodes.com/) for awesome colors and th
 ##Screenshot
 
 
-![alt tag](https://raw.githubusercontent.com/akshay-naik/TextHighlighter/master/screenshot.png)
-
-![alt tag](https://github.com/akshayrn/TextHighlighter/blob/master/TextHighlighter.png)
+![alt tag](https://raw.githubusercontent.com/akshay-naik/TextHighlighter/master/screenshot.png) ![alt tag](https://github.com/akshayrn/TextHighlighter/blob/master/TextHighlighter.png)
 
 ##License
 
