@@ -13,14 +13,6 @@ Add below line in app ```build.gradle```
  
 ```gradle
 dependencies {
-	compile 'com.github.akshayrn:texthighlighterapi:1.1.4'
-}
-```
-if getting error try previous version
-
-
-```gradle
-dependencies {
 	compile 'com.github.akshay-naik:texthighlighterapi:1.1.3'
 }
 ```
