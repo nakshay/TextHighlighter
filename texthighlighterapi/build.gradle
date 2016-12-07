@@ -10,12 +10,12 @@ ext {
 
     libraryDescription = 'TextHighlighter is simple android API for developers to show highlighted text in android apps.'
 
-    siteUrl = 'https://github.com/akshayrn/TextHighlighter'
-    gitUrl = 'https://github.com/akshayrn/TextHighlighter.git'
+    siteUrl = 'https://github.com/nakshay/TextHighlighter'
+    gitUrl = 'https://github.com/nakshay/TextHighlighter.git'
 
-    libraryVersion = '1.1.4'
+    libraryVersion = '1.1.5'
 
-    developerId = 'akshayrn'
+    developerId = 'nakshay'
     developerName = 'Akshay Naik'
     developerEmail = 'akshaynaik93@gmail.com'
 
