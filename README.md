@@ -1,4 +1,4 @@
-# TextHighlighter [ ![Download](https://api.bintray.com/packages/akshaynaik/maven/texthighlighterapi/images/download.svg) ](https://bintray.com/akshaynaik/maven/texthighlighterapi/_latestVersion)
+# TextHighlighter [ ![Download](https://api.bintray.com/packages/akshaynaik/maven/TextHighlighter/images/download.svg) ](https://bintray.com/akshaynaik/maven/TextHighlighter/_latestVersion)
 
 TextHighlighter is simple android API for developers to show highlighted text in android apps, also provides methods to show styled text.
 
@@ -13,7 +13,7 @@ Add below line in app ```build.gradle```
  
 ```gradle
 dependencies {
-	compile 'com.github.akshay-naik:texthighlighterapi:1.1.3'
+	compile 'com.github.nakshay:texthighlighterapi:1.2.1'
 }
 ```
 
