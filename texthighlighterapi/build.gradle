@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 
 ext {
     bintrayRepo = 'maven'
-    bintrayName = 'texthighlighterapi'
+    bintrayName = 'TextHighlighter'
 
     publishedGroupId = 'com.github.nakshay'
     libraryName = 'texthighlighterapi'
@@ -13,7 +13,7 @@ ext {
     siteUrl = 'https://github.com/nakshay/TextHighlighter'
     gitUrl = 'https://github.com/nakshay/TextHighlighter.git'
 
-    libraryVersion = '1.2.0'
+    libraryVersion = '1.2.1'
 
     developerId = 'nakshay'
     developerName = 'Akshay Naik'
