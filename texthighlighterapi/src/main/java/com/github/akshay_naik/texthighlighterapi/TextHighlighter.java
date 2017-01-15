@@ -25,7 +25,7 @@ import java.util.StringTokenizer;
 
 public class TextHighlighter {
 
-    private String defaultColor="black";
+    private String defaultColor;
     private HashMap<String,String> colorMap= new HashMap<>();
     private HashMap<String,String> styleMap=new HashMap<>();
 
@@ -57,11 +57,23 @@ public class TextHighlighter {
 
     public void setDefaultColor(String color)
     {
-     defaultColor=color;
+        if(color=="" || color == null) {
+            defaultColor = "black";
+        }
+        else {
+            defaultColor=color;
+        }
+
     }
     public String getDefaultColor()
     {
-        return defaultColor;
+        if(defaultColor == "" || defaultColor == null) {
+            return defaultColor;
+        }
+        else {
+            return defaultColor;
+        }
+
     }
 
     private String getColor(String myToken) {
