@@ -23,19 +23,12 @@ import java.util.StringTokenizer;
  * Created by akshay on 14/08/16.
  */
 
-public class TextHighlighter {
+public class TextHighlighter implements LibraryConstants.Language,LibraryConstants.Style {
 
     private String defaultColor;
     private HashMap<String,String> colorMap= new HashMap<>();
     private HashMap<String,String> styleMap=new HashMap<>();
 
-    //pre-defined Styles
-    public static final String NORMAL="NORMAL";
-    public static final String BOLD="BOLD";
-    public static final String ITALIC="ITALIC";
-    public static final String UNDERLINE="UNDERLINE";
-    public static final String SUPERSCRIPT="SUPERSCRIPT";
-    public static final String SUBSCRIPT="SUBSCRIPT";
 
 
     public String getHighlightedText(String stringToBeHighlighted) {
@@ -57,6 +50,7 @@ public class TextHighlighter {
 
     public void setDefaultColor(String color)
     {
+
         if(color=="" || color == null) {
             defaultColor = "black";
         }
