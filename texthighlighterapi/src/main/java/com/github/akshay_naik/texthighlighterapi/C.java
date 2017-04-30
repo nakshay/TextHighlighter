@@ -10,7 +10,9 @@ class C implements Language{
 
     private HashMap<String,String> colorMap= new HashMap<>();
 
-    String[] a={"Awesome","awesome"};
+    //define all token in lowercase, even though text to be highlighted is in uppercase
+
+    String[] a={"awesome"};
     String[] b={"text"};
     String[] c={"highlighter"};
 
@@ -31,7 +33,7 @@ class C implements Language{
 
     @Override
     public String getColor(String myToken) {
-        String color=colorMap.get(myToken);
+        String color=colorMap.get(myToken.toLowerCase());
 
         if(color==null) {
             color=defaultColor;

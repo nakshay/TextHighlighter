@@ -45,21 +45,7 @@ public class TextHighlighter implements LibraryConstant.LanguageConstant,Library
 
         StringTokenizer tokenizer=new StringTokenizer(stringToBeHighlighted);
 
-
-        if(isLanguageDefined()) {
-
-            switch (language) {
-                case C:
-                    selectedLanguage=new C();
-                    break;
-                case CPP:
-                    selectedLanguage=new Cpp();
-                    break;
-                case JAVA:
-                    selectedLanguage=new Java();
-                    break;
-            }
-        }
+        selectedLanguage=selectLanguage(selectedLanguage);
 
         if(selectedLanguage!=null){
             highlightedText=getHighlightedTextForLanguage(tokenizer,selectedLanguage);
@@ -76,6 +62,24 @@ public class TextHighlighter implements LibraryConstant.LanguageConstant,Library
 
 
         return new String(highlightedText);
+    }
+
+    private Language selectLanguage(Language selectedLanguage) {
+        if(language!="" && language!=null){
+
+            switch (language) {
+                case C:
+                    selectedLanguage= new C();
+                    break;
+                case CPP:
+                    selectedLanguage= new Cpp();
+                    break;
+                case JAVA:
+                    selectedLanguage= new Java();
+                    break;
+            }
+        }
+        return selectedLanguage;
     }
 
     private StringBuilder getHighlightedTextForLanguage(StringTokenizer tokenizer, Language selectedLanguage) {
@@ -95,15 +99,6 @@ public class TextHighlighter implements LibraryConstant.LanguageConstant,Library
 
     }
 
-    private boolean isLanguageDefined() {
-        if(language!="" && language!=null){
-            return true;
-        }
-        else{
-            return false;
-        }
-
-    }
 
     public void setDefaultColor(String color)
     {

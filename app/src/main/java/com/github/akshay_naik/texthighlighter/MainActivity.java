@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         highlighter.setDefaultColor("black");
 
-        highlighter.setColorForTheToken("awesome","red");
+       /* highlighter.setColorForTheToken("awesome","red");
         highlighter.setColorForTheToken("text","purple");
         highlighter.setColorForTheToken("highlighter","blue");
 
@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
         highlighter.setStyleForTheToken("Text",TextHighlighter.UNDERLINE);
         highlighter.setStyleForTheToken("Highlighter",TextHighlighter.ITALIC);
 
-
-       //highlighter.setLanguage(highlighter.C);
+*/
+       highlighter.setLanguage(highlighter.C);
         mTextView= (TextView) findViewById(R.id.mytextview);
         mEditText =(EditText) findViewById(R.id.myedittext);
 
