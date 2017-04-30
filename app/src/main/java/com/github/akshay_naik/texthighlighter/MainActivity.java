@@ -32,13 +32,15 @@ public class MainActivity extends AppCompatActivity {
         highlighter.setStyleForTheToken("Text",TextHighlighter.UNDERLINE);
         highlighter.setStyleForTheToken("Highlighter",TextHighlighter.ITALIC);
 
+
+       //highlighter.setLanguage(highlighter.C);
         mTextView= (TextView) findViewById(R.id.mytextview);
         mEditText =(EditText) findViewById(R.id.myedittext);
 
         String highlightedText=highlighter.getHighlightedText("Awesome text highlighter");
         String styledText=highlighter.getStyledText(highlightedText);
 
-        mTextView.setText(Html.fromHtml(styledText));
+        mTextView.setText(Html.fromHtml(highlightedText));
         mEditText.setText(Html.fromHtml(styledText));
     }
 }
