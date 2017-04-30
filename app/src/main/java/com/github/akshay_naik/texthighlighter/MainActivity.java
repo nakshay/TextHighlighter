@@ -9,6 +9,7 @@ import android.widget.TextView;
 import com.github.akshay_naik.texthighlighterapi.TextHighlighter;
 
 
+
 public class MainActivity extends AppCompatActivity {
 
     TextView mTextView;

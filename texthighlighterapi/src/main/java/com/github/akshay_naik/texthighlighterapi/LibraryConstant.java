@@ -4,16 +4,16 @@ package com.github.akshay_naik.texthighlighterapi;
  * Created by akshay on 29/04/17.
  */
 
-public interface LibraryConstants {
+public interface LibraryConstant {
 
-    public interface Language {
+    public interface LanguageConstant {
 
-        String JAVA="JAVA";
-        String C="C";
-        String CPP="C++";
+        public static String JAVA="JAVA";
+        public static String C="C";
+        public static String CPP="C++";
     }
 
-    public interface Style {
+    public interface StyleConstant {
 
         //pre-defined Styles
 
