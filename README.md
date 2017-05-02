@@ -116,6 +116,15 @@ Visit [www.htmlcolorcodes](http://htmlcolorcodes.com/) for awesome colors and th
 
 ![alt tag](https://raw.githubusercontent.com/akshay-naik/TextHighlighter/master/screenshot.png) ![alt tag](https://github.com/akshayrn/TextHighlighter/blob/master/TextHighlighter.png)
 
+## Current development
+
+Please refer [Wiki](https://github.com/nakshay/TextHighlighter/wiki) section to know more about current development 
+
+
+## How to Contribute?
+
+Please refer [CONTRIBUTE.md](https://github.com/nakshay/TextHighlighter/blob/languagefeature/CONTRIBUTE.md) to see contribute workflow.
+
 ## License
 
 Copyright 2016 AKSHAY NAIK
