@@ -23,19 +23,17 @@ import java.util.StringTokenizer;
  * Created by akshay on 14/08/16.
  */
 
-public class TextHighlighter {
+public class TextHighlighter implements LibraryConstant.LanguageConstant,LibraryConstant.StyleConstant {
 
     private String defaultColor;
+    private String language;
     private HashMap<String,String> colorMap= new HashMap<>();
     private HashMap<String,String> styleMap=new HashMap<>();
 
-    //pre-defined Styles
-    public static final String NORMAL="NORMAL";
-    public static final String BOLD="BOLD";
-    public static final String ITALIC="ITALIC";
-    public static final String UNDERLINE="UNDERLINE";
-    public static final String SUPERSCRIPT="SUPERSCRIPT";
-    public static final String SUBSCRIPT="SUBSCRIPT";
+    public void setLanguage(String language)
+    {
+        this.language=language;
+    }
 
 
     public String getHighlightedText(String stringToBeHighlighted) {
@@ -43,20 +41,68 @@ public class TextHighlighter {
         String color="";
         String myToken="";
 
+        Language selectedLanguage=null;
+
         StringTokenizer tokenizer=new StringTokenizer(stringToBeHighlighted);
 
-        while (tokenizer.hasMoreTokens()) {
+        selectedLanguage=selectLanguage(selectedLanguage);
 
-            myToken = tokenizer.nextToken();
-            color=getColor(myToken);
-            highlightedText.append(colorTheToken(myToken, color) + " ");
+        if(selectedLanguage!=null){
+            highlightedText=getHighlightedTextForLanguage(tokenizer,selectedLanguage);
         }
+        else {
+
+            while (tokenizer.hasMoreTokens()) {
+
+                myToken = tokenizer.nextToken();
+                color = getColor(myToken);
+                highlightedText.append(colorTheToken(myToken, color) + " ");
+            }
+        }
+
 
         return new String(highlightedText);
     }
 
+    private Language selectLanguage(Language selectedLanguage) {
+        if(language!="" && language!=null){
+
+            switch (language) {
+                case C:
+                    selectedLanguage= new C();
+                    break;
+                case CPP:
+                    selectedLanguage= new Cpp();
+                    break;
+                case JAVA:
+                    selectedLanguage= new Java();
+                    break;
+            }
+        }
+        return selectedLanguage;
+    }
+
+    private StringBuilder getHighlightedTextForLanguage(StringTokenizer tokenizer, Language selectedLanguage) {
+
+        StringBuilder highlightedText=new StringBuilder();
+        String color="";
+        String myToken="";
+
+        while (tokenizer.hasMoreTokens()) {
+
+            myToken = tokenizer.nextToken();
+            color = selectedLanguage.getColor(myToken);
+            highlightedText.append(colorTheToken(myToken, color) + " ");
+        }
+
+        return highlightedText;
+
+    }
+
+
     public void setDefaultColor(String color)
     {
+
         if(color=="" || color == null) {
             defaultColor = "black";
         }
@@ -83,10 +129,6 @@ public class TextHighlighter {
         if(color==null) {
             color=defaultColor;
         }
-
-
-        colorTheToken(myToken,color);
-
         return color;
     }
 
@@ -133,8 +175,6 @@ public class TextHighlighter {
         return color;
 
     }
-
-
 
     public String getStyledText(String stringToBeStyled)  {
         StringBuilder styledText=new StringBuilder();
