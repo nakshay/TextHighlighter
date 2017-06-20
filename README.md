@@ -123,7 +123,7 @@ Please refer [Wiki](https://github.com/nakshay/TextHighlighter/wiki) section to 
 
 ## How to Contribute?
 
-Please refer [CONTRIBUTE.md](https://github.com/nakshay/TextHighlighter/blob/languagefeature/CONTRIBUTE.md) to see contribute workflow.
+Please refer [CONTRIBUTE.md](https://github.com/nakshay/TextHighlighter/blob/master/CONTRIBUTING.md) to see contribute workflow.
 
 ## License
 
