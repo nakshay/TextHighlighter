@@ -113,15 +113,14 @@ Visit [www.htmlcolorcodes](http://htmlcolorcodes.com/) for awesome colors and th
 ## Default languages support
 
 Now TextHighlighter supports automatic color highlighting for default langauges.
-C
-C++ 
-Java
+
+Currently supporting C, C++ and Java.
 
 ```highlighter.setLanguage(highlighter.CPP); ```
 
 The above line will select default color for highlighting C++ code and you can get rid of all settings for C++ code highlighting like setStyleForTheToken method call
 
-Note: This is major change in the library and API *may change in future.
+Note: This is a major change in the library and API *may change in future. If you have any suggestions for default colors please open an issue. I am also ready to accept patches, refer contributing guidelines if interested. 
 
 ## Screenshot
 
