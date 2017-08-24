@@ -13,7 +13,7 @@ Add below line in app ```build.gradle```
  
 ```gradle
 dependencies {
-	compile 'com.github.nakshay:texthighlighterapi:1.2.1'
+	compile 'com.github.nakshay:texthighlighterapi:1.2.2'
 }
 ```
 
@@ -110,6 +110,18 @@ Example:-
 
 Visit [www.htmlcolorcodes](http://htmlcolorcodes.com/) for awesome colors and their Hex values. 
 
+## Default languages support
+
+Now TextHighlighter supports automatic color highlighting for default langauges.
+C
+C++ 
+Java
+
+```highlighter.setLanguage(highlighter.CPP); ```
+
+The above line will select default color for highlighting C++ code and you can get rid of all settings for C++ code highlighting like setStyleForTheToken method call
+
+Note: This is major change in the library and API *may change in future.
 
 ## Screenshot
 
