@@ -29,12 +29,12 @@ public class MainActivity extends AppCompatActivity {
         highlighter.setColorForTheToken("awesome","red");
         highlighter.setColorForTheToken("text","purple");
         highlighter.setColorForTheToken("highlighter","blue");
-*/
+
         highlighter.setStyleForTheToken("Awesome",TextHighlighter.BOLD);
         highlighter.setStyleForTheToken("Text",TextHighlighter.UNDERLINE);
         highlighter.setStyleForTheToken("Highlighter",TextHighlighter.ITALIC);
 
-
+*/
        highlighter.setLanguage(highlighter.JAVA);
         mTextView= (TextView) findViewById(R.id.mytextview);
 
