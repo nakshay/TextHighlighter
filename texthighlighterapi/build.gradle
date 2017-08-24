@@ -13,11 +13,11 @@ ext {
     siteUrl = 'https://github.com/nakshay/TextHighlighter'
     gitUrl = 'https://github.com/nakshay/TextHighlighter.git'
 
-    libraryVersion = '1.2.1'
+    libraryVersion = '1.2.2'
 
     developerId = 'nakshay'
     developerName = 'Akshay Naik'
-    developerEmail = 'akshaynaik93@gmail.com'
+    developerEmail = 'inbox.akshaynaik@gmail.com'
 
     licenseName = 'The Apache Software License, Version 2.0'
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
