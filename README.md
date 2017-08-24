@@ -2,12 +2,12 @@
 
 TextHighlighter is simple android API for developers to show highlighted text in android apps, also provides methods to show styled text.
 
-##Description:
+## Description:
 
 The purpose of TextHighlighter API is provide the simplest way to highlight the text in android apps.
 The API can be used with all andriod views which allows the rendering of text using ```Html.fromHtml()``` method.
 
-##Usage
+## Usage
 
 Add below line in app ```build.gradle```
  
@@ -17,7 +17,7 @@ dependencies {
 }
 ```
 
-##Code snippets
+## Code snippets
 
 Create the object of TextHighlighter
 
@@ -88,7 +88,7 @@ String[] = getStyleForTheToken(String[] token);
 ```
 
 
-##Note:
+## Note:
 
 Named colors may not work always, you can use Hex values insted of named colors, hence using Hex values instead of named colors is recommended.
 
@@ -97,7 +97,7 @@ Example:-
 
 ```highlighter.setColorForTheToken("Awesome","#D83400"); ```
 
-##Supported tags for text styling
+## Supported tags for text styling
 
  ```
  <b>
@@ -111,12 +111,21 @@ Example:-
 Visit [www.htmlcolorcodes](http://htmlcolorcodes.com/) for awesome colors and their Hex values. 
 
 
-##Screenshot
+## Screenshot
 
 
 ![alt tag](https://raw.githubusercontent.com/akshay-naik/TextHighlighter/master/screenshot.png) ![alt tag](https://github.com/akshayrn/TextHighlighter/blob/master/TextHighlighter.png)
 
-##License
+## Current development
+
+Please refer [Wiki](https://github.com/nakshay/TextHighlighter/wiki) section to know more about current development 
+
+
+## How to Contribute?
+
+Please refer [CONTRIBUTE.md](https://github.com/nakshay/TextHighlighter/blob/languagefeature/CONTRIBUTE.md) to see contribute workflow.
+
+## License
 
 Copyright 2016 AKSHAY NAIK
 
