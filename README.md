@@ -1,3 +1,7 @@
+# Alert! 
+
+This library is no longer maintained, if intrested in contribution do let me know. 
+
 # TextHighlighter [ ![Download](https://api.bintray.com/packages/akshaynaik/maven/TextHighlighter/images/download.svg) ](https://bintray.com/akshaynaik/maven/TextHighlighter/_latestVersion)
 
 TextHighlighter is simple android API for developers to show highlighted text in android apps, also provides methods to show styled text.
