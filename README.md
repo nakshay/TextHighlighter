@@ -1,6 +1,5 @@
 # Alert! 
 
-- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) Due to time constraints I am not able to maintain this library, please let me know if interested to help in maintaining this awesome library.
 
 # TextHighlighter [ ![Download](https://api.bintray.com/packages/akshaynaik/maven/TextHighlighter/images/download.svg) ](https://bintray.com/akshaynaik/maven/TextHighlighter/_latestVersion)
 
